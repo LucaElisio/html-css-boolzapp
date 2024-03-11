@@ -30,6 +30,10 @@ img {
     justify-content: space-between;
 }
 
+.dir-col{
+    flex-direction: column;
+}
+
 /* UTILITIES */
 .w-100{
     width: 100%;
@@ -168,6 +172,33 @@ body{
     background-color: lightblue;
 }
 
+
+/* Alerts */
+.alerts{
+    background-color: #8edafc;
+    min-height: 80px;
+}
+
+/* Profile Search */
+.profile-search{
+    background-color: #eaeaea;
+    min-height: 40px;
+}
+
+/* Chat List */
+.single-chat{
+    /* debug */
+    min-height: 70px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+.picture{
+    /* debug */
+    background-color: lightcoral;
+    border: 1px solid red;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
     
@@ -193,4 +224,20 @@ body{
         width: 70%;
     }
 
+    .alerts{
+        display: block;
+    }
+
+    .profile-search{
+        display: block;
+    }
+
+    .picture{
+        width: 20%;
+    }
+
+    .details{
+        display: block;
+        width: 80%;
+    }
 }
