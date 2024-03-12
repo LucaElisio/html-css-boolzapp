@@ -259,10 +259,29 @@ body{
     font-size: 20px;
 }
 
+
 /* Profile Search */
 .profile-search{
     background-color: #eaeaea;
     min-height: 40px;
+    text-align: center;
+}
+
+.profile-search input{
+    width: 100%;
+    border: 0;
+    background: transparent;
+}
+
+
+.input{
+    color: grey;
+    width: 90%;
+    line-height: 40px;
+    gap: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /* Chat List */
@@ -299,7 +318,7 @@ body{
     }
 
     .profile-search{
-        display: block;
+        display: flex;
     }
 
     .details{
