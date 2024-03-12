@@ -211,7 +211,7 @@ body{
 .main{
     height: calc(100% - 70px);
     /* debug */
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .main-chat,
@@ -285,11 +285,17 @@ body{
 }
 
 /* Chat List */
+.chat-list{
+    overflow-y: scroll;
+}
+
 .single-chat{
-    /* debug */
+    padding: 0px 10px;
     min-height: 70px;
-    background-color: lightgreen;
-    border: 1px solid black;
+    border-bottom: 1px solid gray;
+    /* debug */
+    /* background-color: lightgreen;
+    border: 1px solid black; */
 }
 
 .picture{
@@ -311,6 +317,10 @@ body{
 /* Desktop */
 @media screen and (min-width: 1024px) {
 
+    .chat-list{
+        height: calc(100% - 120px);
+    }
+
     .alerts{
         display: flex;
         gap: 10px;
@@ -324,5 +334,9 @@ body{
     .details{
         display: block;
         width: 80%;
+    }
+
+    .user-desc{
+        display: block;
     }
 }
