@@ -278,12 +278,27 @@ body{
     text-align: right;
 }
 
-
-
 .write{
     height: 70px;
-    /* debug */
-    background-color: lightblue;
+    background-color: #eaeaea;
+}
+
+.write-message{
+    width: 95%;
+    padding: 10px;
+    height: 80%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.write-col{
+    text-align: center;
+    color: grey;
+    width: 10%;
+}
+
+.write-col i{
+    font-size: 1.5rem;
 }
 
 
@@ -362,6 +377,10 @@ body{
         padding: 30px;
     }
 
+    .write-col{
+        display: block;
+    }
+
 }
 
 /* Desktop */
@@ -392,5 +411,9 @@ body{
 
     .chat{
         padding: 70px;
+    }
+
+    .write-message{
+        width: 80%;
     }
 }
