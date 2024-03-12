@@ -57,6 +57,9 @@ ul{
     overflow-y: scroll;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
 
 /* UTILITIES */
 .w-100{
@@ -229,13 +232,56 @@ body{
 }
 
 .chat{
-    height: 93%;
+    padding: 20px;
+    height: calc(100% - 70px);
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
     /* debug */
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
+.col{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.end{
+    justify-content: flex-end;
+}
+
+.sent{
+    background-color: #d5f9ba;
+}
+
+.received {
+    background-color: white;
+}
+
+.message{
+    padding: 10px 10px 5px 10px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.text{
+    gap: 10px;
+}
+
+.text i{
+    color: grey;
+}
+
+.message-hour{
+    color: gray;
+    font-size: 0.6rem;
+    text-align: right;
+}
+
+
+
 .write{
-    height: 7%;
+    height: 70px;
     /* debug */
     background-color: lightblue;
 }
@@ -312,6 +358,10 @@ body{
         display: block;
     }
 
+    .chat{
+        padding: 30px;
+    }
+
 }
 
 /* Desktop */
@@ -338,5 +388,9 @@ body{
 
     .user-desc{
         display: block;
+    }
+
+    .chat{
+        padding: 70px;
     }
 }
