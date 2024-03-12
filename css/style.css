@@ -75,6 +75,11 @@ ul{
     height: 100vh;
 }
 
+.underline{
+    text-decoration: underline;
+}
+
+
 /* BODY */
 body{
     position: relative;
@@ -145,7 +150,7 @@ body{
 }
 
 .last-seen{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: grey;
 }
 
@@ -242,6 +247,18 @@ body{
     min-height: 80px;
 }
 
+.alerts-icon{
+    color: #8edafc;
+    background-color: white;
+    display: block;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.alerts-icon i{
+    font-size: 20px;
+}
+
 /* Profile Search */
 .profile-search{
     background-color: #eaeaea;
@@ -276,7 +293,9 @@ body{
 @media screen and (min-width: 1024px) {
 
     .alerts{
-        display: block;
+        display: flex;
+        gap: 10px;
+        padding: 0px 10px;
     }
 
     .profile-search{
