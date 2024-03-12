@@ -45,6 +45,10 @@ ul{
     align-items: center;
 }
 
+.justy-ctr{
+    justify-content: center ;
+}
+
 .gap{
     gap: 10px;
 }
@@ -110,9 +114,10 @@ body{
 }
 
 .header-profile{
+    border-right: 1px solid grey;
     /* debug */
     width: var(--profile-section-width);
-    background-color: violet;
+    /* background-color: violet; */
 }
 
 .header-chat{
@@ -123,7 +128,13 @@ body{
 .profile-icons,
 .profile-img {
     /* debug */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+}
+
+.profile-icons ul{
+    line-height: 70px;
+    gap: 20px;
+    color: grey;
 }
 
 .picture img{
@@ -148,6 +159,10 @@ body{
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+
+    :root{
+        --profile-section-width: 70px;
+    }
     
     /* Header Chat Section (Right) */
 
@@ -155,35 +170,34 @@ body{
         display: block;
     }
 
-    .header-chat-user{
-        width: 50%;
-    }
-
     /* Header Profile Section (Left) */
     .header-profile{
         display: flex;
-        --profile-section-width: 70px;
     }
 
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+
+    :root{
+        --profile-section-width: 300px;
+    }
     
     /* Header Chat Section (Right) */
 
     /* Header Profile Section (Left) */
-    .header-profile{
-        --profile-section-width: 350px;
-    }
-
-    .profile-img{
-        width: 50%;
-    }
-
     .profile-icons{
         display: block;
+        padding-right: 10px;
     }
+
+    .profile-img {
+        justify-content: start;
+        padding-left: 10px;
+    }
+
+
 
 }
 
@@ -254,7 +268,6 @@ body{
     
     .main-profile{
         display: block;
-        --profile-section-width: 70px;
     }
 
 }
@@ -262,20 +275,12 @@ body{
 /* Desktop */
 @media screen and (min-width: 1024px) {
 
-    .main-profile{
-        --profile-section-width: 350px;
-    }
-
     .alerts{
         display: block;
     }
 
     .profile-search{
         display: block;
-    }
-
-    .picture{
-        width: 20%;
     }
 
     .details{
